@@ -10,7 +10,22 @@
               margin: 0 auto;
               max-width: 700px;
               height: 100px;
-            }   
+            }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .linha{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #item {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
@@ -25,10 +40,11 @@
            
             <br> <br>
             <p class="lead mb-4">Download the User's Guide and the latest version of the Armadeira Network Data Collector app.<br><br>
-            <div  class="center-div">
-                <a class="btn btn-primary btn-lg px-4 me-sm-3"  href="https://raw.githubusercontent.com/swperfi-project/Pages-dev/main/ArmdNetworkDataCollector-app/armadeira-3.00.00-alpha.apk" download="filename">Download apk</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="btn btn-primary btn-lg px-4 me-sm-3"  href="https://raw.githubusercontent.com/swperfi-project/Pages-dev/main/ArmdNetworkDataCollector-app/ArmadeiraUsersGuide-v3.00.00-alpha.pdf" download="filename">Download user's guide</a>
+            <div  class="container">
+                <div>
+                    <a id="item" class="btn btn-primary btn-lg px-4 me-sm-3"  href="https://raw.githubusercontent.com/swperfi-project/Pages-dev/main/ArmdNetworkDataCollector-app/armadeira-3.00.00-alpha.apk" download="filename">Download apk</a>
+                    <a id="item" class="btn btn-primary btn-lg px-4 me-sm-3"  href="https://raw.githubusercontent.com/swperfi-project/Pages-dev/main/ArmdNetworkDataCollector-app/ArmadeiraUsersGuide-v3.00.00-alpha.pdf" download="filename">Download user's guide</a>
+                </div>                
             </div>    
             
             <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://github.com/projeto-swperfi/Ext_Armd_Network_Data_Collector_app/">Visit Armadeira's GitHub</a></p>-->
