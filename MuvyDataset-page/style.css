@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #003349;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #037298;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+header .logo {
+    width: 190px; /* Tamanho da logo */
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header h1 {
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 100px 0;
+    margin-top: 60px;
+}
+
+#overview, #statistics, #download, #contact {
+    background-color: #fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background: #037298;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+}
+
+/* Estilo para o link dentro do rodapé com cor branca */
+footer a {
+    color: #fff; /* Cor do link alterada para branco */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#hero {
+    background-image: url('images/muvy-header.png'); /* Referencie o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Define a altura da seção como 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Cor do texto */
+}
+
+#hero h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+/* Define o fundo branco para todas as seções */
+section {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno */
+    margin: 10; /* Remove margens */
+}
+
+#overview {
+    margin-top: 0; /* Remove margem superior */
+    padding-top: 20px; /* Se necessário, ajuste o padding */
+    background-color: #f9f9f9; /* Cor de fundo para destaque */
+    padding: 40px;
+}
+
+.overview-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.overview-column {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.overview-column p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.overview-column img {
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.overview-full {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.overview-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+
+.statistics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.stat-card {
+    background-color: #f4f4f4;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px); /* 3 cards por linha */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #037298;
+}
+
+.stat-card p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        width: calc(50% - 20px); /* 2 cards por linha para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .stat-card {
+        width: 100%; /* 1 card por linha para telas pequenas */
+    }
+}
+
+.totals {
+    margin-top: 40px;
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.totals h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #037298;
+}
+
+.totals-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.total-item {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.total-item h3 {
+    font-size: 1.5em;
+    color: #037298;
+}
+
+.total-number {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ff5722; /* Cor de destaque para os números */
+}
+
+@media (max-width: 768px) {
+    .totals-grid {
+        flex-direction: column;
+    }
+
+    .total-item {
+        margin-bottom: 20px;
+    }
+}
+
+#download {
+    background-color: #f4f4f4; /* Fundo claro */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#download p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#download ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+#download ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #037298;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #005f75; /* Cor de hover no botão */
+}
+
+/* Estilo para as imagens lado a lado */
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.image-item {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image-item:last-child {
+    margin-right: 0;
+}
+
+.stat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .totals-grid {
+        flex-direction: column;
+    }
+
+    .total-item {
+        margin-bottom: 20px;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .image-item {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+#team {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #037298;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ajusta para centralizar os elementos */
+}
+
+
+/* Estilo para o texto e imagem lado a lado */
+.team-intro {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.team-text {
+    flex: 2; /* Permite que o texto ocupe mais espaço */
+    margin-right: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.team-image {
+    flex: 1; /* Controla o tamanho da área da imagem */
+    display: flex;
+    justify-content: center;
+}
+
+.team-image img {
+    width: 300px; /* Ajusta o tamanho da logo */
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #003349;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .team-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .team-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .team-image img {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    width: calc(50% - 30px); /* Dois cards por linha */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #037298;
+}
+
+.team-member p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px); /* Dois cards por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-member {
+        width: 100%; /* Um card por linha em dispositivos pequenos */
+    }
+}
+
+.team-grid .team-member:nth-child(odd):last-child {
+    width: 50%; /* Se houver um número ímpar de cards, o último ocupa 50% */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o último card */
+}

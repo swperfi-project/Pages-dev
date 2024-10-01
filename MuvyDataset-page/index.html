@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUVY Dataset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#hero">
+                <img src="images/logo.png" alt="MUVY Logo" class="logo">
+            </a>
+            <nav>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#details">Data Details</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#contact">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container">
+        </div>
+    </section>
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="overview-content">
+                <div class="overview-column">
+                    <img src="images/smartphone-icon.png" alt="Mobile Icon" class="overview-icon">
+                    <p><strong>The proliferation of mobile devices</strong> with video recording capabilities
+                        has revolutionized the creation, sharing, and consumption of audiovisual content, 
+                        turning user-generated video (UGV) platforms into major data sources.</p>
+                </div>
+                <div class="overview-column">
+                    <img src="images/muvy-ov.png" alt="Dataset Icon" class="overview-icon">
+                    <p><strong>Despite this growth</strong>, there is a notable gap in the availability of public
+                        datasets featuring multi-angle recordings of sports events captured by various mobile cameras.
+                        This led to the creation of the <strong>MUVY Dataset</strong>, with the name stemming from
+                        <strong>Multiview User-generated Videos from YouTube.</strong></p>
+                </div>
+            </div>
+            <div class="overview-full">
+                <img src="images/sports-icon.png" alt="Sports Icon" class="overview-icon">
+                <p>The dataset offers a diverse collection of sports videos from multiple perspectives, without
+                    restrictions on video size. In its first version, it covers sports like, <strong>American 
+                    football, artistic gymnastics, athletics, basketball, tennis, and cricket.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="container">
+            <h2>Data Details</h2>
+            <div class="overview-full">
+                <img src="images/sample-s.png" alt="Metadata Icon" class="overview-image">
+                <p>Each video is accompanied by metadata including camera identification, YouTube URLs, extracted
+                    frames, and object annotations.</p>
+            </div>
+            <div class="overview-full">
+                <img src="images/shaking-ex.png" alt="Pose Estimation Image" class="overview-image">
+                <p>The dataset addresses common challenges in user-generated videos,
+                    such as shaking, occlusions, blurring, and abrupt movements.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="statistics">
+        <div class="container">
+    
+            <!-- Totais destacados -->
+            <div class="totals">
+                <h2> Statistics Summary</h2>
+                <div class="totals-grid">
+                    <div class="total-item">
+                        <h3>Total Events</h3>
+                        <p class="total-number">31</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Total Videos</h3>
+                        <p class="total-number">141</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Total Duration</h3>
+                        <p class="total-number">3:15:23</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Total Frames</h3>
+                        <p class="total-number">333,180</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Imagens lado a lado -->
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="images/new_num_videos_per_sport.png" alt="Imagem 1" class="stat-image">
+                </div>
+                <div class="image-item">
+                    <img src="images/events_per_sport_ok.png" alt="Imagem 2" class="stat-image">
+                </div>
+            </div>
+    
+            <!-- Cards dos Esportes -->
+            <div class="statistics-grid">
+                <div class="stat-card">
+                    <h3>Athletics</h3>
+                    <p><strong>Events:</strong> 8</p>
+                    <p><strong>Videos:</strong> 50</p>
+                    <p><strong>Frames:</strong> 174,388</p>
+                    <p><strong>Duration:</strong> 1:46:33</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Soccer</h3>
+                    <p><strong>Events:</strong> 8</p>
+                    <p><strong>Videos:</strong> 35</p>
+                    <p><strong>Frames:</strong> 70,774</p>
+                    <p><strong>Duration:</strong> 0:39:48</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Basketball</h3>
+                    <p><strong>Events:</strong> 5</p>
+                    <p><strong>Videos:</strong> 13</p>
+                    <p><strong>Frames:</strong> 14,105</p>
+                    <p><strong>Duration:</strong> 0:07:53</p>
+                </div>
+                <div class="stat-card">
+                    <h3>American Football</h3>
+                    <p><strong>Events:</strong> 4</p>
+                    <p><strong>Videos:</strong> 30</p>
+                    <p><strong>Frames:</strong> 44,692</p>
+                    <p><strong>Duration:</strong> 0:24:55</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Artistic Gymnastics</h3>
+                    <p><strong>Events:</strong> 3</p>
+                    <p><strong>Videos:</strong> 6</p>
+                    <p><strong>Frames:</strong> 18,841</p>
+                    <p><strong>Duration:</strong> 0:10:28</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tennis</h3>
+                    <p><strong>Events:</strong> 2</p>
+                    <p><strong>Videos:</strong> 5</p>
+                    <p><strong>Frames:</strong> 7,064</p>
+                    <p><strong>Duration:</strong> 0:03:55</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Cricket</h3>
+                    <p><strong>Events:</strong> 1</p>
+                    <p><strong>Videos:</strong> 2</p>
+                    <p><strong>Frames:</strong> 3,316</p>
+                    <p><strong>Duration:</strong> 0:01:51</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="download">
+        <div class="container">
+            <h2>Download</h2>
+            <p>To access the MUVY Dataset, please follow the instructions below:</p>
+            <ul>
+                <li>The dataset is hosted on Zenodo, a research data repository.</li>
+                <li>Click the button to be redirected to the Zenodo page, where you can download the dataset.</li>
+            </ul>
+            <a href="https://zenodo.org" target="_blank" class="download-button">Download on Zenodo</a>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <!-- Texto e Imagem lado a lado -->
+            <div class="team-intro">
+                <div class="team-text">
+                    <p>All team members are part of the <a href="https://swperfi.icomp.ufam.edu.br">SWPERFI - Artificial Intelligence Techniques for Software Performance Analysis</a> project, which focuses on Research, Development, and Technological Innovation (RD&I). The SWPERFI project applies advanced artificial intelligence techniques, such as deep learning and data mining, to analyze software performance metrics. The project develops innovative methods to verify dependencies, establish correlations, and identify the causes of performance issues. Ultimately, SWPERFI aims to create a prototype tool for software performance testing and optimization using AI.</p>
+                </div>
+                <div class="team-image">
+                    <img src="images/swperfi_logo.svg" alt="Team Logo">
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <!-- <img src="images/larissa.jpg" alt="Larissa da Silva Pessoa" class="team-image"> -->
+                    <h3>Larissa da Silva Pessoa</h3>
+                    <p>Master Student (PPGI/UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <!-- <img src="images/elton.jpg" alt="Elton Alencar" class="team-image"> -->
+                    <h3>Elton Alencar</h3>
+                    <p>Master Student (PPGI/UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <!-- <img src="images/fernanda.jpg" alt="Fernanda Costa" class="team-image"> -->
+                    <h3>Fernanda Costa</h3>
+                    <p>Computer Eng. Undergraduate Student (UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <!-- <img src="images/guilherme.jpg" alt="Guilherme Souza" class="team-image"> -->
+                    <h3>Guilherme Souza</h3>
+                    <p>Software Eng. Undergraduate Student (UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <!-- <img src="images/rosiane.jpg" alt="Rosiane de Freitas" class="team-image"> -->
+                    <h3>Rosiane de Freitas</h3>
+                    <p>Phd. Professor(Icomp/UFAM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>Copyright © <a href="https://swperfi.icomp.ufam.edu.br">SWPERFI - Artificial Intelligence Techniques for Software Performance Analysis</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Adiciona smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
