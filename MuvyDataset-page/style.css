@@ -411,7 +411,7 @@ section {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     margin: 15px;
     text-align: center;
     width: calc(50% - 30px); /* Dois cards por linha */
@@ -428,7 +428,9 @@ section {
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    display: inline;
 }
 
 .team-member h3 {
