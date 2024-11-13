@@ -144,7 +144,7 @@ section {
 }
 
 .overview-column p {
-    text-align: left;
+    text-align: justify;
     font-size: 1.2em;
     line-height: 1.5;
 }
@@ -153,11 +153,6 @@ section {
     max-width: 100%; /* Garante imagens responsivas */
     height: auto;
     margin-bottom: 10px;
-}
-
-.overview-full {
-    text-align: center;
-    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
@@ -174,6 +169,10 @@ section {
 .overview-full {
     text-align: center;
     margin-top: 40px;
+}
+
+.overview-full p {
+    font-size: 1.2em;
 }
 
 .overview-image {
@@ -387,6 +386,7 @@ section {
     font-size: 1.2em;
     line-height: 1.6;
     color: #555;
+    text-align: justify;
 }
 
 .team-image {
