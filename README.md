@@ -10,10 +10,10 @@
 
 * **Network:** [ArmdNetworkDataCollector-app](http://swperfi-project.github.io/Pages-dev/ArmdNetworkDataCollector-app/) - Collects network data.
 
-* **Sleep:** [SleepMonitorDataCollector-app](https://swperfi-project.github.io/Pages-dev/SleepMonitorDataCollector-app/) - Collects data from sleep monitors.
+* **Sleep:** [SleepMonitorDataCollector-app](https://swperfi-project.github.io/Pages-dev/SleepMonitorDataCollector-app/) - Sleep-wake state monitoring.
 
   
 
 ## Database:
 
-* **Muvy Dataset:** [MuvyDataset-page](https://swperfi-project.github.io/Pages-dev/MuvyDataset-page/) - A dataset for [insert description of Muvy Dataset].
+* **Muvy Dataset:** [MuvyDataset-page](https://swperfi-project.github.io/Pages-dev/MuvyDataset-page/) - A dataset of Multiview User-generated Videos from YouTube.
