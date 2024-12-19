@@ -44,7 +44,13 @@
             <img src="ARMADEIRA.png" alt="ARMADEIRA logo" style="width:330px">              
            
             <br> <br>
-            <p class="lead mb-4">Download the User's Guide and the latest version of the Armadeira Network Data Collector app.<br><br>
+            <p class="lead mb-4">Download the User's Guide and the latest version (<span id="latest-version"></span>) of the <span id="app-name"></span> app.<br><br>
+                <script>
+                    let appName = "Armadeira Network Data Collector";
+                    let latestVersion = "4.3.0";
+                    document.getElementById('app-name').textContent = appName;
+                    document.getElementById('latest-version').textContent = latestVersion;
+                </script>
             <div  class="container">
                 <div class="linha" style="gap:20px">
                     <a  class="btn btn-primary btn-lg px-4 me-sm-3"  href="Armadeira-apk.html" target="_blank" >Download APK</a>
@@ -56,7 +62,9 @@
                         </button>
                         <ul class="dropdown-menu"> 
                             
-                            
+                            <li><a class="dropdown-item" href="https://github.com/swperfi-project/ArmdNetworkDataCollector-app-ext/blob/main/old_versions/Armadeira-4.2.0.zip">Armadeira 4.2.0</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/swperfi-project/ArmdNetworkDataCollector-app-ext/blob/main/old_versions/Armadeira-4.00.02.zip">Armadeira 4.00.02</a></li>
+
                             <li><a class="dropdown-item" href="https://github.com/swperfi-project/ArmdNetworkDataCollector-app-ext/raw/main/old_versions/Armadeira-4.00.01.zip">Armadeira 4.00.01</a></li>
                             <li><a class="dropdown-item" href="https://github.com/swperfi-project/ArmdNetworkDataCollector-app-ext/raw/main/old_versions/Armadeira-4.00.00.zip">Armadeira 4.00.00</a></li>
                             <li><a class="dropdown-item" href="https://github.com/swperfi-project/ArmdNetworkDataCollector-app-ext/raw/main/old_versions/Armadeira-3.09.01.zip">Armadeira 3.09.01</a></li>
