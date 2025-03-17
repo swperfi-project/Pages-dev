@@ -1,14 +1,14 @@
 <style>
     /* Estilo para o cabeçalho */
     .header {
-        background-color: #162a4d; /* Azul escuro */
-        padding: 10px 0; /* Espaçamento em cima e embaixo */
+        background-color: #162a4d;
         text-align: center;
     }
     
     .header img {
         max-width: 170px; /* Limitar a largura da imagem */
         margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+        background-color: #162a4d;
     }
 
     .header .title {
