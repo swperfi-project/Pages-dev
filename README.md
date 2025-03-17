@@ -15,7 +15,7 @@
         color: #fff;
         font-size: 24px;
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .header .subtitle {
         color: #fff;
@@ -33,12 +33,12 @@
 
 <!-- Cabeçalho com logo e fundo azul -->
 <div class="header">
-    <img src="Suindara-app\swperfi-logo.png" alt="SWPERFI Logo" >
+    <img src="https://swperfi.icomp.ufam.edu.br/images/lead/PERFI-amarela.png" alt="SWPERFI Logo" >
     <div class="title">Artificial Intelligence Techniques for Software Performance Analysis and Optimization</div>
     <div class="subtitle">Resources/materials developed and/or generated</div>
 </div>
 
-<div><br></dv>
+--- 
 
 # Pages-dev
   
