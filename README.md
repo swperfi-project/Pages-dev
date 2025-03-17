@@ -33,7 +33,7 @@
 
 <!-- Cabeçalho com logo e fundo azul -->
 <div class="header">
-    <img src="https://swperfi.icomp.ufam.edu.br/images/lead/PERFI-amarela.png" alt="SWPERFI Logo" >
+    <img src="PERFI-amarela.png" alt="SWPERFI Logo" >
     <div class="title">Artificial Intelligence Techniques for Software Performance Analysis and Optimization</div>
     <div class="subtitle">Resources/materials developed and/or generated</div>
 </div>
