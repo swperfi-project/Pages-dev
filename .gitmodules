@@ -1,0 +1,3 @@
+[submodule "Suindara-app"]
+	path = Suindara-app
+	url = https://github.com/swperfi-project/suindara-app-desktop-ext.git
