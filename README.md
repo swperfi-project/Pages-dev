@@ -4,7 +4,7 @@
 
 ## Applications:
 
-* **Suindara app:** [Suindara-app](https://swperfi-project.github.io/Pages-dev/SleepMonitorDataCollector-app/) - Parser and Predictor Desktop Application for Android Call Drop Logs
+* **Suindara app:** [Suindara-app](https://swperfi-project.github.io/Pages-dev/Suindara-app/) - Parser and Predictor Desktop Application for Android Call Drop Logs
 
 ### Data Collection:
 
