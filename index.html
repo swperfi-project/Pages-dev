@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWPERFI - Software Performance Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        /* Reset and Base Styles */
+        body {
+            font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px; /* Limit container width */
+            margin: auto;
+            padding: 2rem 0;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #162a4d;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .header img {
+            max-width: 120px; /* Slightly smaller logo */
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .header h1 {
+            font-size: 2rem; /* Smaller title */
+            font-weight: 500; /* Lighter font weight */
+            margin-bottom: 0.25rem;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.8; /* Slightly faded description */
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.75rem;
+            color: #162a4d;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #037298; /* Accent line under title */
+        }
+
+        /* Cards */
+        .card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08); /* Softer shadow */
+            margin-bottom: 1.5rem;
+        }
+
+        .card-body {
+            padding: 1.25rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            color: #162a4d;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        /* Team Labels */
+        .team-label {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 0.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .team-label-IH {
+            background-color: #994f1d;
+            color: #fff;
+        }
+
+        .team-label-IH-Modem {
+            background-color: #a8dadc;
+            color: #333;
+        }
+
+        .team-label-CV-IM {
+            background-color: #db1f1f;
+            color: #fff;
+        }
+
+        .team-label-IS {
+            background-color: #24982e;
+            color: #fff;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: #037298;
+            border-color: #037298;
+            font-size: 0.9rem;
+            padding: 0.1rem 0.7rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #025e7f;
+            border-color: #025e7f;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #162a4d;
+            color: #fff;
+            text-align: center;
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="PERFI-amarela.png" alt="SWPERFI Logo">
+        <h1>Artificial Intelligence Techniques for Software Performance Analysis and Optimization</h1>
+        <p>RESEARCH, DEVELOPMENT AND TECHNOLOGICAL INNOVATION PROJECT (RD&I)</p>
+        <h2>Project Deliverables: Resources and Tools</h2>
+        <!-- RESEARCH, DEVELOPMENT AND TECHNOLOGICAL INNOVATION PROJECT (RD&I) -->
+    </header>
+
+    <div class="container">
+
+        <h2 class="section-title">Android Data Collection Tools</h2>
+        <div class="row">
+            <div class="col-12"> <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Armadeira</h5>
+                    <p class="card-text">The Armadeira app was developed for mobile devices with the purpose of collecting network communication data.
+                    
+                    <a href="Pages-dev/ArmdNetworkDataCollector-app/" class="btn btn-primary btn-sm">Learn More</a>
+                    </p>
+                    <span class="team-label team-label-IH">IH</span>
+                </div>
+            </div>
+            </div>
+            <div class="col-12"> <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tucandeira</h5>
+                        <p class="card-text">Tucandeira is a smartphone application that collects data from the device, such as battery, memory, and general usage data.
+
+                        <a href="Pages-dev/TucdAndroidDataCollector-app/" class="btn btn-primary btn-sm">Learn More</a>
+                        </p>
+                        <span class="team-label team-label-IS">IS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12"> <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sleep Monitor</h5>
+                        <p class="card-text">This application is designed to monitor a user's sleep and wake status by collecting data from smartphone sensors.
+                            <a href="Pages-dev/SleepMonitorDataCollector-app/" class="btn btn-primary btn-sm">Learn More</a>
+                        </p>
+                        <span class="team-label team-label-IS">IS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Databases</h2>
+        <div class="row">
+            <div class="col-12"> <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">MUVY Dataset</h5>
+                        <p class="card-text">A dataset of Multiview User-generated Videos from YouTube.
+                            <a href="Pages-dev/MuvyDataset-page/" class="btn btn-primary btn-sm">Learn More</a>
+                        </p>
+                        <span class="team-label team-label-CV-IM">CV-IM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Windows Applications</h2>
+        <div class="row">
+            <div class="col-12"> <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Suindara App</h5>
+                        <p class="card-text">Parser and Predictor Desktop Application for Android Call Drop Logs.
+                            <a href="Pages-dev/Suindara-app/" class="btn btn-primary btn-sm">Learn More</a>
+                        </p>
+                        <span class="team-label team-label-IH-Modem">IH-Modem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Web Applications</h2>
+        <div class="row">
+            <div class="col-12"> <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Memory Tracer</h5>
+                        <!-- <p class="card-text">Parser and Predictor Desktop Application for Android Call Drop Logs.
+                            <a href="Pages-dev/Suindara-app/" class="btn btn-primary btn-sm">Learn More</a>
+                        </p> -->
+                        <span class="team-label team-label-IS">IS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© SWPERFI - Software Performance Analysis and Optimization. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
