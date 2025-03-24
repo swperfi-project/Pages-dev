@@ -18,7 +18,7 @@
     <style>
         .center-div {
             margin: 0 auto;
-            max-width: 900px;
+            /* max-width: 800px; */
             text-align: center;
         }
         .container {
@@ -26,7 +26,7 @@
             flex-direction: column;
         }
         .container2 {
-            padding: 20px;
+            padding: 15px;
         }
         .left-align-container {
             border: 1px solid #ddd;
@@ -105,10 +105,10 @@
             <div class="container">
                 <div class="linha">
                     <!-- <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://doi.org/10.5281/zenodo.15036680" target="_blank">⬇️ Download .exe v1.0.0</a> -->
-                    <a  class="btn btn-primary btn-lg px-4 me-sm-3"href="https://github.com/swperfi-project/suindara-app-desktop-ext/releases/latest" target="_blank">
-                        Download<img src="https://img.shields.io/github/v/release/swperfi-project/suindara-app-desktop-ext?style=for-the-badge" alt="GitHub release"> 
+                    <a  class="btn btn-primary btn-lg px-4 me-sm-3" href="https://github.com/swperfi-project/suindara-app-desktop-ext/releases/latest" target="_blank">
+                        Download <img src="https://img.shields.io/github/v/release/swperfi-project/suindara-app-desktop-ext?style=for-the-badge" alt="GitHub release"> 
                       </a>
-                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="suindara-app-guide.html" target="_blank">Download USER'S GUIDE 📖 </a>
+                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="User Guide - UFAM_SWPERFI_SUINDARA_APP.pdf" target="_blank">Download USER'S GUIDE 📖 </a>
                     <a class="btn btn-primary btn-lg px-4 me-sm-3" href="https://github.com/swperfi-project/suindara-app-desktop-ext" target="_blank">🔗 GitHub Repository</a>
                     <div class="dropdown">
                         <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -157,22 +157,46 @@
                 // Fetch old versions from the GitHub repository releases
                 const releasesUrl = "https://api.github.com/repos/swperfi-project/suindara-app-desktop-ext/releases";
 
-                fetch(releasesUrl)
+                // fetch(releasesUrl)
+                //     .then(response => response.json())
+                //     .then(releases => {
+                //         const oldVersionsList = document.getElementById("old-versions");
+
+                //         releases.forEach(release => {
+                //             const versionItem = document.createElement("li");
+                //             const versionLink = document.createElement("a");
+                //             versionLink.classList.add("dropdown-item");
+                //             versionLink.href = release.assets[0].browser_download_url; 
+                //             versionLink.textContent = `Suindara App ${release.tag_name}`;
+                //             versionItem.appendChild(versionLink);
+                //             oldVersionsList.appendChild(versionItem);
+                //         });
+                //     })
+                //     .catch(error => console.error("Error loading old versions:", error));
+                // Fetch all versions from Zenodo using parent.id
+                const zenodoParentId = "15036680";
+                const zenodoApiUrl = `https://zenodo.org/api/records/?q=parent.id:${zenodoParentId}&all_versions=true&sort=version`;
+
+                fetch(zenodoApiUrl)
                     .then(response => response.json())
-                    .then(releases => {
+                    .then(data => {
                         const oldVersionsList = document.getElementById("old-versions");
 
-                        releases.forEach(release => {
+                        data.hits.hits.forEach(record => {
                             const versionItem = document.createElement("li");
                             const versionLink = document.createElement("a");
                             versionLink.classList.add("dropdown-item");
-                            versionLink.href = release.assets[0].browser_download_url; // Assuming the asset is the first one
-                            versionLink.textContent = `Suindara App v${release.tag_name}`;
+
+                            const zenodoDOI = record.doi ? `https://doi.org/${record.doi}` : record.links.html;
+                            const versionTag = record.metadata.version || record.metadata.publication_date;
+
+                            versionLink.href = zenodoDOI;
+                            versionLink.textContent = `Suindara App ${versionTag}`;
                             versionItem.appendChild(versionLink);
                             oldVersionsList.appendChild(versionItem);
                         });
                     })
-                    .catch(error => console.error("Error loading old versions:", error));
+                    .catch(error => console.error("Error loading versions from Zenodo:", error));
             </script>
 
             
