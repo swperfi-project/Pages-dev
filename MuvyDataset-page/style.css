@@ -389,14 +389,14 @@ section {
     text-align: justify;
 }
 
-.team-image {
-    flex: 1; /* Controla o tamanho da área da imagem */
+.team-intro .team-image {
+    flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.team-image img {
-    width: 300px; /* Ajusta o tamanho da logo */
+.team-intro .team-image img {
+    width: 300px;
     height: 100px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -421,7 +421,7 @@ section {
         margin-bottom: 20px;
     }
     
-    .team-image img {
+    .team-intro .team-image img {
         width: 100%;
         max-width: 200px;
     }
