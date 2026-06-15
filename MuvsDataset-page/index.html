@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUVS Dataset</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#hero">
+                <img src="images/muvs-logo.png" alt="MUVS Logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#details">Data Details</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container"></div>
+    </section>
+
+    <section id="overview">
+        <div class="container">
+            <h2>Overview</h2>
+            <div class="overview-single">
+                <p><strong>The proliferation of mobile devices</strong> with video and sensor recording capabilities
+                    has created new opportunities for multimodal sports analysis. However, there is a lack of
+                    public datasets featuring <strong>synchronized multi-view recordings</strong> of live sports events
+                    captured directly in the field by multiple smartphones.</p>
+                <p><strong>To address this gap</strong>, we introduce <strong>MUVS</strong> —
+                    <strong>Multimodal Multi-view User-Generated Sports Dataset</strong> — a dataset of
+                    multi-view video and inertial sensor data collected simultaneously from multiple Android
+                    smartphones during live sports events, enabling research in camera selection, viewpoint
+                    ranking, and video mashup generation.</p>
+                <p>Each smartphone captured video alongside <strong>18 onboard sensor channels</strong>
+                    — including accelerometer, gyroscope, magnetometer, orientation, ambient light, pressure, proximity,
+                    and GPS — providing a rich multimodal signal for mobile sensing and activity recognition research.
+                    The dataset covers <strong>Basketball, Soccer, Hockey, and Volleyball</strong> events.</p>
+                <div class="overview-img-center">
+                    <img src="images/overview.png" alt="Dataset Overview" class="overview-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="container">
+            <h2>Data Details</h2>
+
+            <div class="overview-full">
+                <img src="images/structurepng.png" alt="Dataset Structure" class="overview-image">
+                <p>MUVS is organized into <strong>overlap periods</strong> — time intervals where at least two cameras
+                    were simultaneously active. Each period is segmented into aligned <strong>3-second fragments</strong>,
+                    enabling segment-level comparison and selection across viewpoints.</p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <h3>Video</h3>
+                    <p>Period-level videos encoded in H.264 (MP4, CRF 23), hosted on Google Cloud Storage.
+                        Faces are anonymized using Gaussian blur (YuNet detector) prior to public release.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Sensor Data</h3>
+                    <p>Fragment-level sensor measurements from 18 channels: accelerometer (x/y/z), gyroscope (x/y/z),
+                        magnetometer (x/y/z), orientation (x/y/z), ambient light, pressure, proximity,
+                        and GPS (latitude, longitude, speed).</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Annotations</h3>
+                    <p>Fragment-level camera selection labels collected via a dedicated labeling tool.
+                        For each 3-second fragment, an expert annotator selected the best camera among
+                        all simultaneously active viewpoints.</p>
+                </div>
+                <div class="detail-card">
+                    <h3>Splits</h3>
+                    <p>The dataset is provided in <strong>train</strong> and <strong>test</strong> splits,
+                        with events distributed across both splits to enable cross-sport and cross-venue evaluation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="statistics">
+        <div class="container">
+
+            <div class="totals">
+                <h2>Statistics Summary</h2>
+                <div class="totals-grid">
+                    <div class="total-item">
+                        <h3>Total Events</h3>
+                        <p class="total-number">17</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Total Fragments</h3>
+                        <p class="total-number">5,039</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Total Duration</h3>
+                        <p class="total-number">4h 05m</p>
+                    </div>
+                    <div class="total-item">
+                        <h3>Period Videos</h3>
+                        <p class="total-number">258</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <div class="image-item">
+                    <img src="images/fragments_per_sport.png" alt="Fragments per sport" class="stat-image">
+                </div>
+                <div class="image-item">
+                    <img src="images/events_per_sport.png" alt="Events per sport" class="stat-image">
+                </div>
+            </div>
+
+            <div class="statistics-grid">
+                <div class="stat-card">
+                    <h3>Basketball</h3>
+                    <p><strong>Events:</strong> 12</p>
+                    <p><strong>Cameras:</strong> 2–3 per event</p>
+                    <p><strong>Venues:</strong> Naperville, Waukegan, Chicago</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Soccer</h3>
+                    <p><strong>Events:</strong> 3</p>
+                    <p><strong>Cameras:</strong> 2–3 per event</p>
+                    <p><strong>Venues:</strong> Chicago, Naperville</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Volleyball</h3>
+                    <p><strong>Events:</strong> 1</p>
+                    <p><strong>Cameras:</strong> 2–3 per event</p>
+                    <p><strong>Venues:</strong> Chicago</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Hockey</h3>
+                    <p><strong>Events:</strong> 1</p>
+                    <p><strong>Cameras:</strong> 2–3 per event</p>
+                    <p><strong>Venues:</strong> Chicago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="container">
+            <h2>Download</h2>
+            <p>MUVS is distributed in two parts: <strong>metadata and annotations</strong> are archived on Zenodo,
+                while <strong>period videos</strong> are hosted on Google Cloud Storage and downloaded via the
+                provided script.</p>
+
+            <div class="download-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-body">
+                        <strong>Download the Zenodo package</strong>
+                        <p>Contains fragment-level metadata (sensor data, timestamps), camera selection annotations,
+                            the video download script, and this README.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-body">
+                        <strong>Download the videos from GCS</strong>
+                        <p>Run the included <code>download_videos.py</code> script to fetch period videos from
+                            Google Cloud Storage. No credentials required — the bucket is publicly accessible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-buttons">
+                <a href="https://zenodo.org/records/20708683" target="_blank" class="download-button">Download on Zenodo</a>
+            </div>
+
+            <div class="download-card">
+                <h3>Downloading Videos</h3>
+                <p>After downloading the Zenodo package, run the following commands from inside the package directory:</p>
+                <pre class="code-block"># Install dependencies
+pip install -r requirements.txt
+
+# Download all videos (~164.9 GB)
+python download_videos.py
+
+# Download to a custom directory
+python download_videos.py --out /path/to/videos
+
+# Download only specific events
+python download_videos.py --events naperville_kids_match_20240608
+
+# Preview without downloading
+python download_videos.py --dry_run</pre>
+                <p class="citation-note">The script is resumable: already downloaded files are skipped on re-run.</p>
+            </div>
+
+            <div class="download-card">
+                <h3>Persistent Access</h3>
+                <p>The official version of MUVS is archived on Zenodo and can be accessed through the persistent
+                    DOI below.</p>
+                <div class="doi-table">
+                    <div class="doi-row">
+                        <span class="doi-label">DOI</span>
+                        <a href="https://doi.org/10.5281/zenodo.20708683" target="_blank" class="doi-link">10.5281/zenodo.20708683</a>
+                    </div>
+                    <div class="doi-row">
+                        <span class="doi-label">Zenodo Record</span>
+                        <a href="https://zenodo.org/records/20708683" target="_blank" class="doi-link">https://zenodo.org/records/20708683</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="download-card">
+                <h3>Version History</h3>
+                <div class="version-item">
+                    <span class="version-tag">v1.0</span>
+                    <div class="version-body">
+                        <strong>2026 — Initial public release</strong>
+                        <ul>
+                            <li>17 sports events across Basketball, Soccer, Hockey, and Volleyball.</li>
+                            <li>5,039 aligned 3-second fragments with 18-channel sensor data.</li>
+                            <li>Fragment-level camera selection annotations.</li>
+                            <li>258 period-level videos with face anonymization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Team</h2>
+            <div class="team-intro">
+                <div class="team-text">
+                    <p>All team members are part of the <a href="https://swperfi.icomp.ufam.edu.br">SWPERFI — Artificial Intelligence Techniques for Software Performance Analysis</a> project at the Instituto de Computação, Universidade Federal do Amazonas (IComp/UFAM). The MUVS dataset was created as part of research on multi-view video analysis, camera selection, and automatic video mashup generation from user-generated content.</p>
+                </div>
+                <div class="team-image">
+                    <img src="images/swperfi_logo.svg" alt="SWPERFI Logo">
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/team/larissa-perfil.jpg" alt="Larissa da Silva Pessoa" class="team-photo">
+                    <h3>Larissa Pessoa</h3>
+                    <p>Master Student (PPGI/UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/elton-perfil.png" alt="Elton Alencar" class="team-photo">
+                    <h3>Elton Alencar</h3>
+                    <p>Master Student (PPGI/UFAM)</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/rosiane-perfil.png" alt="Rosiane de Freitas" class="team-photo">
+                    <h3>Rosiane de Freitas</h3>
+                    <p>PhD. Professor (IComp/UFAM)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="visitors">
+        <div class="container">
+            <div class="visitors-content">
+                <h2>Our visitors around the world!</h2>
+                <div id="revolvermaps-widget">
+                    <iframe src="https://revolvermaps2.com/widget/13b5052b-bf15-406a-ba7e-a0c072ce6b72" width="320" height="320" style="border:0;" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; <a href="https://swperfi.icomp.ufam.edu.br">SWPERFI — Artificial Intelligence Techniques for Software Performance Analysis</a>. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
