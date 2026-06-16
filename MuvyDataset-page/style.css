@@ -649,9 +649,9 @@ section {
 }
 
 #visitors-counter {
-    min-height: 200px;
+    min-height: 300px;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 /* Responsividade */
