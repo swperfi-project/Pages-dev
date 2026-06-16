@@ -668,8 +668,10 @@ h2 {
     margin: 0;
 }
 
-#visitors-counter img {
-    height: 28px;
+#visitors-counter {
+    min-height: 200px;
+    width: 100%;
+    max-width: 500px;
 }
 
 @media (max-width: 768px) {
